@@ -37,32 +37,18 @@
 | Blind modification | Careful, incremental refactoring |
 
 ### SOLID Principles Integration
-Our codebase follows SOLID principles to ensure maintainable, scalable software:
+Our codebase follows SOLID principles to ensure maintainable, scalable software.
 
-#### Single Responsibility Principle (SRP)
-- Each class/module should have one reason to change
-- Separate concerns: business logic, data access, presentation
-- **AI Guideline**: Before adding functionality to existing code, ask "Does this belong here?"
+**Quick Reference**: See [`tools/solid_principles_quick_reference.md`](tools/solid_principles_quick_reference.md) for essential patterns and checklists.
 
-#### Open/Closed Principle (OCP)
-- Software entities should be open for extension, closed for modification
-- Use interfaces, abstract classes, and dependency injection
-- **AI Guideline**: Extend behavior through new classes/modules, not by modifying existing ones
+**Detailed Guide**: See [`tools/solid_principles_guide.md`](tools/solid_principles_guide.md) for comprehensive examples and implementation strategies.
 
-#### Liskov Substitution Principle (LSP)
-- Derived classes must be substitutable for their base classes
-- Maintain behavioral compatibility in inheritance hierarchies
-- **AI Guideline**: Ensure any subclass can replace its parent without breaking functionality
-
-#### Interface Segregation Principle (ISP)
-- Clients shouldn't depend on interfaces they don't use
-- Create focused, cohesive interfaces
-- **AI Guideline**: Design small, specific interfaces rather than large, monolithic ones
-
-#### Dependency Inversion Principle (DIP)
-- High-level modules shouldn't depend on low-level modules; both should depend on abstractions
-- Abstractions shouldn't depend on details; details should depend on abstractions
-- **AI Guideline**: Inject dependencies rather than creating them directly
+#### Core SOLID Guidelines for AI Development
+- **Single Responsibility (SRP)**: Before adding functionality, ask "Does this belong here?"
+- **Open/Closed (OCP)**: Extend behavior through new classes/modules, not modifications
+- **Liskov Substitution (LSP)**: Ensure any subclass can replace its parent without breaking functionality
+- **Interface Segregation (ISP)**: Design small, specific interfaces rather than large, monolithic ones
+- **Dependency Inversion (DIP)**: Inject dependencies rather than creating them directly
 
 ---
 
@@ -335,7 +321,7 @@ If you can answer these questions, your context management is solid:
 ## 10. Common AI Tasks
 
 ### Code Review Checklist
-- [ ] Follows SOLID principles
+- [ ] Follows SOLID principles (use [quick reference](tools/solid_principles_quick_reference.md))
 - [ ] Maintains existing architectural patterns
 - [ ] Includes appropriate tests
 - [ ] Updates relevant documentation

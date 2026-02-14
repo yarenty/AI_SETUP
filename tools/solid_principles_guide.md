@@ -1,6 +1,17 @@
-# SOLID Principles Implementation Guide
+# SOLID Principles - Detailed Implementation Guide
 
-> A practical guide for implementing SOLID principles in AI-assisted development across different programming languages and frameworks.
+> **Comprehensive guide with detailed examples for implementing SOLID principles in Rust and other languages.**
+> 
+> **For quick reference**: Use [`solid_principles_quick_reference.md`](solid_principles_quick_reference.md) for daily development.
+> **For learning/deep-dives**: This guide provides complete examples and implementation strategies.
+
+## When to Use This Guide
+
+- **Learning SOLID**: First time implementing principles in Rust
+- **Complex Refactoring**: Large architectural changes requiring detailed patterns
+- **Code Review**: Need specific examples to validate design decisions
+- **Debugging Design**: Understanding why current design violates principles
+- **Architecture Planning**: Designing new systems following SOLID principles
 
 ## Table of Contents
 1. [Overview](#overview)
@@ -14,16 +25,9 @@
 
 ## Overview
 
-SOLID principles are fundamental guidelines for writing maintainable, scalable software. This guide provides practical implementation strategies and examples for AI-assisted development.
+SOLID principles are fundamental guidelines for writing maintainable, scalable software. This guide provides comprehensive implementation strategies and detailed Rust examples for AI-assisted development.
 
-### Quick Reference
-| Principle | Key Question | AI Guideline |
-|-----------|--------------|--------------|
-| **SRP** | Does this class have one reason to change? | Before adding functionality, ask "Does this belong here?" |
-| **OCP** | Can I extend behavior without modifying existing code? | Extend through new classes/modules, not modifications |
-| **LSP** | Can I substitute this subclass for its parent? | Ensure behavioral compatibility in inheritance |
-| **ISP** | Are there unused methods in this interface? | Create focused, cohesive interfaces |
-| **DIP** | Do high-level modules depend on low-level details? | Inject dependencies, depend on abstractions |
+**For Quick Reference**: See [`solid_principles_quick_reference.md`](solid_principles_quick_reference.md) for essential patterns and checklists.
 
 ## Single Responsibility Principle (SRP)
 
