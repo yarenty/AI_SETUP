@@ -3,6 +3,13 @@
   WHAT: This is your roadmap for the entire task. Think of it as your "working memory on disk."
   WHY: After 50+ tool calls, your original goals can get forgotten. This file keeps them fresh.
   WHEN: Create this FIRST, before starting any work. Update after each phase completes.
+  
+  SOLID PRINCIPLES REMINDER:
+  - Single Responsibility: Each class/module should have one reason to change
+  - Open/Closed: Open for extension, closed for modification
+  - Liskov Substitution: Subclasses must be substitutable for their parents
+  - Interface Segregation: Clients shouldn't depend on unused interfaces
+  - Dependency Inversion: Depend on abstractions, not concretions
 -->
 
 ## Goal
@@ -32,9 +39,11 @@ Phase 1
   WHAT: Understand what needs to be done and gather initial information.
   WHY: Starting without understanding leads to wasted effort. This phase prevents that.
 -->
-- [ ] Understand user intent
-- [ ] Identify constraints and requirements
-- [ ] Document findings in findings.md
+- [ ] Understand user intent and business requirements
+- [ ] Identify constraints, dependencies, and integration points
+- [ ] Review existing codebase and architectural patterns
+- [ ] Read component-specific AGENT.md files if applicable
+- [ ] Document findings and architectural context
 - **Status:** in_progress
 <!-- 
   STATUS VALUES:
@@ -43,14 +52,18 @@ Phase 1
   - complete: Finished this phase
 -->
 
-### Phase 2: Planning & Structure
+### Phase 2: Planning & Architecture
 <!-- 
   WHAT: Decide how you'll approach the problem and what structure you'll use.
   WHY: Good planning prevents rework. Document decisions so you remember why you chose them.
 -->
-- [ ] Define technical approach
-- [ ] Create project structure if needed
-- [ ] Document decisions with rationale
+- [ ] Define technical approach following SOLID principles
+- [ ] Design interfaces and abstractions first (DIP)
+- [ ] Plan for extensibility without modification (OCP)
+- [ ] Ensure single responsibility for each component (SRP)
+- [ ] Create focused, client-specific interfaces (ISP)
+- [ ] Design inheritance hierarchies carefully (LSP)
+- [ ] Document architectural decisions with rationale
 - **Status:** pending
 
 ### Phase 3: Implementation
@@ -58,19 +71,31 @@ Phase 1
   WHAT: Actually build/create/write the solution.
   WHY: This is where the work happens. Break into smaller sub-tasks if needed.
 -->
-- [ ] Execute the plan step by step
+- [ ] Implement interfaces and abstractions first
+- [ ] Create concrete implementations following SRP
+- [ ] Use dependency injection for loose coupling (DIP)
+- [ ] Write small, focused methods and classes
+- [ ] Follow established coding standards and patterns
 - [ ] Write code to files before executing
-- [ ] Test incrementally
+- [ ] Test incrementally with unit tests
 - **Status:** pending
 
 ### Phase 4: Testing & Verification
 <!-- 
   WHAT: Verify everything works and meets requirements.
-  WHY: Catching issues early saves time. Document test results in progress.md.
+  WHY: Catching issues early saves time. Document test results for future reference.
 -->
-- [ ] Verify all requirements met
-- [ ] Document test results in progress.md
-- [ ] Fix any issues found
+- [ ] Verify all functional requirements met
+- [ ] Test SOLID principles compliance:
+  - [ ] Single Responsibility: Each class has one clear purpose
+  - [ ] Open/Closed: Can extend without modifying existing code
+  - [ ] Liskov Substitution: Subclasses work as drop-in replacements
+  - [ ] Interface Segregation: No unused interface methods
+  - [ ] Dependency Inversion: High-level modules independent of low-level details
+- [ ] Run unit tests and integration tests
+- [ ] Test error handling and edge cases
+- [ ] Document test results and coverage
+- [ ] Fix any issues found following 3-strike protocol
 - **Status:** pending
 
 ### Phase 5: Delivery
@@ -90,9 +115,11 @@ Phase 1
   EXAMPLE: 
     1. Should tasks persist between sessions? (Yes - need file storage)
     2. What format for storing tasks? (JSON file)
+    3. How can we ensure this design is extensible? (Use interfaces and dependency injection)
 -->
 1. [Question to answer]
 2. [Question to answer]
+3. [SOLID-related question if applicable]
 
 ## Decisions Made
 <!-- 
@@ -100,11 +127,12 @@ Phase 1
   WHY: You'll forget why you made choices. This table helps you remember and justify decisions.
   WHEN: Update whenever you make a significant choice (technology, approach, structure).
   EXAMPLE:
-    | Use JSON for storage | Simple, human-readable, built-in Python support |
+    | Use Repository pattern for data access | Follows SRP and DIP, makes testing easier |
+    | Create separate interfaces for read/write | Follows ISP, clients only depend on what they use |
 -->
-| Decision | Rationale |
-|----------|-----------|
-|          |           |
+| Decision | Rationale | SOLID Principle(s) |
+|----------|-----------|-------------------|
+|          |           |                   |
 
 ## Errors Encountered
 <!-- 
@@ -112,20 +140,32 @@ Phase 1
   WHY: Logging errors prevents repeating the same mistakes. This is critical for learning.
   WHEN: Add immediately when an error occurs, even if you fix it quickly.
   EXAMPLE:
-    | FileNotFoundError | 1 | Check if file exists, create empty list if not |
-    | JSONDecodeError | 2 | Handle empty file case explicitly |
+    | FileNotFoundError | 1 | Check if file exists, create empty list if not | Added proper error handling |
+    | Tight coupling issue | 2 | Introduced interface to decouple components | Applied DIP principle |
 -->
-| Error | Attempt | Resolution |
-|-------|---------|------------|
-|       | 1       |            |
+| Error | Attempt | Resolution | Lessons Learned |
+|-------|---------|------------|----------------|
+|       | 1       |            |                |
 
-## Notes
+## Architecture & Design Notes
+<!-- 
+  WHAT: Important architectural insights and design patterns discovered during implementation
+  WHY: Capture design knowledge for future reference and team learning
+-->
+- Design patterns used: [e.g., Repository, Factory, Strategy]
+- SOLID principle applications: [specific examples from your implementation]
+- Integration points: [how this connects with existing systems]
+- Future extensibility: [planned extension points]
+
+## Development Notes
 <!-- 
   REMINDERS:
   - Update phase status as you progress: pending → in_progress → complete
   - Re-read this plan before major decisions (attention manipulation)
   - Log ALL errors - they help avoid repetition
   - Never repeat a failed action - mutate your approach instead
+  - Always consider SOLID principles when making design decisions
+  - Read component AGENT.md files before modifying existing code
 -->
 - Update phase status as you progress: pending → in_progress → complete
 - Re-read this plan before major decisions (attention manipulation)
