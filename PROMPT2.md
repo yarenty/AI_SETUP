@@ -1,9 +1,8 @@
 # PROMPT2: Update Project Identity in `AGENTS.md`
 
-In `AGENTS.md`, update the `Project Identity` section with:
-- Project purpose and core value
+In `AGENTS.md`, update:
 - Technology stack
 - Architecture overview
-- Component structure
+- Component structure if is needed
 
-Write concise, specific text for each bullet.
+Write specific descriptions, if possible create mermaid graphs  - especially in architecture overview.
