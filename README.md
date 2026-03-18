@@ -13,7 +13,7 @@ This template helps you:
 
 ## 📋 What's Included
 
-- **`AGENT.md`** - Comprehensive AI agent guidelines and project documentation
+- **`AGENTS.md`** - Comprehensive AI agent guidelines and project documentation
 - **`tools/task_template.md`** - Structured template for complex task planning
 - **Architecture patterns** - Best practices for AI-assisted development
 - **Quality standards** - Code quality and documentation guidelines
@@ -30,7 +30,7 @@ cp -r SETUP/* /path/to/your/project/
 
 ### 2. Customize for Your Project
 
-1. **Replace placeholders** in `AGENT.md`:
+1. **Replace placeholders** in `AGENTS.md`:
    - `{PROJECT}` → Your project name
    - `{tbd}` → Project-specific information
 
@@ -44,7 +44,7 @@ cp -r SETUP/* /path/to/your/project/
 
 ### 3. Initialize Your First AI Session
 
-Share the `AGENT.md` file with your AI assistant at the beginning of each session to establish context and guidelines.
+Share the `AGENTS.md` file with your AI assistant at the beginning of each session to establish context and guidelines.
 
 ## 🏗️ Template Structure
 
@@ -75,7 +75,7 @@ Share the `AGENT.md` file with your AI assistant at the beginning of each sessio
 4. Update progress regularly
 
 ### For AI Agents
-1. Read component-specific `AGENT.md` files first
+1. Read component-specific `AGENTS.md` files first
 2. Follow the 3-strike error protocol
 3. Use the 2-action rule for information preservation
 4. Maintain clear documentation of changes
@@ -83,7 +83,7 @@ Share the `AGENT.md` file with your AI assistant at the beginning of each sessio
 ## 📖 Best Practices
 
 ### Before Starting Development
-- [ ] Review project's `AGENT.md` file
+- [ ] Review project's `AGENTS.md` file
 - [ ] Read component-specific documentation
 - [ ] Create task plan for complex work
 - [ ] Understand existing code patterns
@@ -112,7 +112,7 @@ Share the `AGENT.md` file with your AI assistant at the beginning of each sessio
 
 ### Adding Component-Specific Guides
 
-For each major component, create an `AGENT.md` file containing:
+For each major component, create an `AGENTS.md` file containing:
 - Component purpose and responsibilities
 - Architecture patterns specific to that component
 - Development and testing workflows
@@ -144,4 +144,4 @@ When working with this template:
 
 ---
 
-**Ready to start?** Copy this template to your project, customize the `AGENT.md` file, and begin your first AI-assisted development session with clear guidelines and structure.
+**Ready to start?** Copy this template to your project, customize the `AGENTS.md` file, and begin your first AI-assisted development session with clear guidelines and structure.

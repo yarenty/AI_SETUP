@@ -118,11 +118,11 @@ Our codebase follows SOLID principles to ensure maintainable, scalable software.
 ```
 
 ### Component-Specific Documentation
-**⚠️ CRITICAL**: Each major component contains its own `AGENT.md` file with detailed information:
+**⚠️ CRITICAL**: Each major component contains its own `AGENTS.md` file with detailed information:
 
-{tbd - list component-specific AGENT.md files}
+{tbd - list component-specific AGENTS.md files}
 
-**Rule**: Before making changes to any component, **always read its specific AGENT.md first** to understand:
+**Rule**: Before making changes to any component, **always read its specific AGENTS.md first** to understand:
 - Component architecture and responsibilities
 - Development workflows and testing approaches  
 - API patterns and integration points
@@ -198,7 +198,7 @@ Our codebase follows SOLID principles to ensure maintainable, scalable software.
 ## 8. Critical Rules & Protocols
 
 ### Rule 0: Read Component Documentation First
-**Before working on any specific component, ALWAYS read its AGENT.md file first.**
+**Before working on any specific component, ALWAYS read its AGENTS.md file first.**
 
 Component-specific files contain crucial information about:
 - Architecture patterns specific to that component
@@ -351,11 +351,11 @@ If you can answer these questions, your context management is solid:
 - [ ] Document resolution in task plan
 
 ### Documentation Updates
-- [ ] Keep component AGENT.md files current
+- [ ] Keep component AGENTS.md files current
 - [ ] Update API documentation for changes
 - [ ] Record architectural decisions
 - [ ] Maintain task planning discipline
-- [ ] Update this master AGENT.md as project evolves
+- [ ] Update this master AGENTS.md as project evolves
 
 ---
 
@@ -370,7 +370,7 @@ If you can answer these questions, your context management is solid:
 | Start executing immediately | Create task plan FIRST |
 | Repeat failed actions | Track attempts, mutate approach systematically |
 | Violate SOLID principles for speed | Take time to design proper abstractions |
-| Skip component documentation | Always read component AGENT.md first |
+| Skip component documentation | Always read component AGENTS.md first |
 
 ---
 
